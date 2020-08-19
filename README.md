@@ -84,12 +84,12 @@ Ou celle-ci s'il y a un unique fichier:
 | Base name  	|    JPEG (Cover)    	|
 |------------	|:------------------:	|
 | ALASKA2    	| :heavy_check_mark: 	|
-| BOSS       	| :heavy_check_mark: 	|
-| Dresden    	| :heavy_check_mark: 	|
-| RAISE      	| :heavy_check_mark: 	|
-| TST        	| :heavy_check_mark: 	|
+| BOSS       	|   :no_entry_sign:  	|
+| Dresden    	|   :no_entry_sign:  	|
+| RAISE      	|   :no_entry_sign:  	|
+| TST        	|   :no_entry_sign:  	|
 | StegoApp   	| :heavy_check_mark: 	|
-| Wesaturate 	| :heavy_check_mark: 	|
+| Wesaturate 	|   :no_entry_sign:  	|
 
 [1]: Creation_GrandeBase_Steganalyse_DL.pdf
 [2]: DB_structure.pdf
