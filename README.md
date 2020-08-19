@@ -74,12 +74,12 @@ Ou celle-ci s'il y a un unique fichier:
 ### Grayscale
 | Base name 	|    JPEG (Cover)    	|    JPEG (Stego)    	|     MAT (Cover)    	|        MAT (Stego)       	|
 |-----------	|:------------------:	|:------------------:	|:------------------:	|:------------------------:	|
-| LSSD_10k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|   :no_entry_sign:  	|      :no_entry_sign:     	|
-| LSSD_50k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|   :no_entry_sign:  	|      :no_entry_sign:     	|
+| LSSD_10k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|   :no_entry_sign:  	|    :heavy_check_mark:    	|
+| LSSD_50k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|   :no_entry_sign:  	| :heavy_multiplication_x: 	|
 | LSSD_100k 	|   :no_entry_sign:  	| :heavy_check_mark: 	|   :no_entry_sign:  	|      :no_entry_sign:     	|
 | LSSD_500k 	|   :no_entry_sign:  	| :heavy_check_mark: 	|   :no_entry_sign:  	|      :no_entry_sign:     	|
 | LSSD_1M   	|   :no_entry_sign:  	|   :no_entry_sign:  	| :heavy_check_mark: 	|      :no_entry_sign:     	|
-| LSSD_2M   	|   :no_entry_sign:  	|   :no_entry_sign:  	| :heavy_check_mark: 	| :heavy_multiplication_x: 	|
+| LSSD_2M   	|   :no_entry_sign:  	|   :no_entry_sign:  	| :heavy_check_mark: 	|    :heavy_check_mark:    	|
 | TST_100k  	|   :no_entry_sign:  	|   :no_entry_sign:  	|   :no_entry_sign:  	|      :no_entry_sign:     	|
 
 ## RAW
