@@ -1,6 +1,6 @@
-![badge version](https://img.shields.io/static/v1?style=plastic&label=version&message=0.2&color=yellow)
-![code version](https://img.shields.io/static/v1?style=plastic&label=code&message=development&color=orange)
-![upload version](https://img.shields.io/static/v1?style=plastic&label=upload&message=current&color=critical)
+![badge version](https://img.shields.io/static/v1?style=plastic&label=Version&message=0.3&color=yellow)
+![code version](https://img.shields.io/static/v1?style=plastic&label=Code&message=up-to-date&color=brightgreen)
+![upload version](https://img.shields.io/static/v1?style=plastic&label=Upload&message=current&color=critical)
 
 # About the work
 The goal of this script is to download the **Large Scale Steganalysis Database** (LSSD) developed by Hugo Ruiz in the

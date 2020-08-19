@@ -88,7 +88,6 @@ else
   link_fold="${base_type}/${short_base_name}"
 fi
 fold_list="./Lists"
-fold_DL="../../Every_Bases_ToTest/All_RAR_files" # TODO : À supprimer car remplacé par l'URL du serveur plus bas
 if [ "$output" = '' ]; then
   output_fold="./downloaded/$link_fold"
 else
@@ -128,15 +127,14 @@ fi
 NB_rar_to_DL=$(wc -l <"$list")
 
 while read -r rar_name; do
+  # TODO: ne pas oubleir de changer l'URL (quand il sera connu)
   if [ $base_type == "LSSD" ]; then
     rar_url="https://rhea.lirmm.fr/lssd/Data/${base_type}/${img_type}/${img_type}_${coloring}_${nature}/${base_name}/$rar_name"
   else
     rar_url="https://rhea.lirmm.fr/lssd/Data/${base_type}/${short_base_name}/$rar_name"
   fi
-  rar_path="$fold_DL/$link_fold/$rar_name"
   start_time=$(date +%s)
   if [ ! -f "$output_fold/$rar_name" ]; then
-    printf "%s -> %s\n" "$rar_name" "$rar_url" # TODO: enlever cette ligne de debug
     ( wget --no-check-certificate -c -P ./tmp/ "$rar_url" && mv ./tmp/"$rar_name" "$output_fold"/"$rar_name" ) &>> "$logs_file"
     finish_time=$(date +%s)
     download_time=$finish_time-$start_time
@@ -154,5 +152,4 @@ while read -r rar_name; do
     currentTime=$(date +%s)
     echo "RAR number $rar_index / $NB_rar_to_DL downloaded ! Time Elapsed = $((currentTime - timeStart)) sec."
   fi
-
 done <"$list"
