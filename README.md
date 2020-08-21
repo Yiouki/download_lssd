@@ -1,4 +1,4 @@
-![badge version](https://img.shields.io/static/v1?style=plastic&label=Version&message=0.3&color=yellow)
+![badge version](https://img.shields.io/static/v1?style=plastic&label=Version&message=0.4&color=yellow)
 ![code version](https://img.shields.io/static/v1?style=plastic&label=Code&message=up-to-date&color=brightgreen)
 ![upload version](https://img.shields.io/static/v1?style=plastic&label=Upload&message=current&color=critical)
 
@@ -72,26 +72,26 @@ Ou celle-ci s'il y a un unique fichier:
 | TST_100k  	| :no_entry_sign: 	|
 
 ### Grayscale
-| Base name 	|    JPEG (Cover)    	|    JPEG (Stego)    	|     MAT (Cover)    	|        MAT (Stego)       	|
-|-----------	|:------------------:	|:------------------:	|:------------------:	|:------------------------:	|
-| LSSD_10k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|   :no_entry_sign:  	|    :heavy_check_mark:    	|
-| LSSD_50k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|   :no_entry_sign:  	| :heavy_multiplication_x: 	|
-| LSSD_100k 	|   :no_entry_sign:  	| :heavy_check_mark: 	|   :no_entry_sign:  	|      :no_entry_sign:     	|
-| LSSD_500k 	|   :no_entry_sign:  	| :heavy_check_mark: 	|   :no_entry_sign:  	|      :no_entry_sign:     	|
-| LSSD_1M   	|   :no_entry_sign:  	|   :no_entry_sign:  	| :heavy_check_mark: 	|      :no_entry_sign:     	|
-| LSSD_2M   	|   :no_entry_sign:  	|   :no_entry_sign:  	| :heavy_check_mark: 	|    :heavy_check_mark:    	|
-| TST_100k  	|   :no_entry_sign:  	|   :no_entry_sign:  	|   :no_entry_sign:  	|      :no_entry_sign:     	|
+| Base name 	|    JPEG (Cover)    	|    JPEG (Stego)    	|        MAT (Cover)       	|     MAT (Stego)    	|
+|-----------	|:------------------:	|:------------------:	|:------------------------:	|:------------------:	|
+| LSSD_10k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|      :no_entry_sign:     	| :heavy_check_mark: 	|
+| LSSD_50k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|      :no_entry_sign:     	| :heavy_check_mark: 	|
+| LSSD_100k 	|   :no_entry_sign:  	| :heavy_check_mark: 	|      :no_entry_sign:     	| :heavy_check_mark: 	|
+| LSSD_500k 	|   :no_entry_sign:  	| :heavy_check_mark: 	| :heavy_multiplication_x: 	| :heavy_check_mark: 	|
+| LSSD_1M   	|   :no_entry_sign:  	|   :no_entry_sign:  	|    :heavy_check_mark:    	|   :no_entry_sign:  	|
+| LSSD_2M   	|   :no_entry_sign:  	|   :no_entry_sign:  	|    :heavy_check_mark:    	| :heavy_check_mark: 	|
+| TST_100k  	|   :no_entry_sign:  	|   :no_entry_sign:  	|      :no_entry_sign:     	|   :no_entry_sign:  	|
 
 ## RAW
 | Base name  	|    JPEG (Cover)    	|
 |------------	|:------------------:	|
 | ALASKA2    	| :heavy_check_mark: 	|
-| BOSS       	|   :no_entry_sign:  	|
-| Dresden    	|   :no_entry_sign:  	|
+| BOSS       	| :heavy_check_mark: 	|
+| Dresden    	| :heavy_check_mark: 	|
 | RAISE      	|   :no_entry_sign:  	|
 | TST        	|   :no_entry_sign:  	|
 | StegoApp   	| :heavy_check_mark: 	|
-| Wesaturate 	|   :no_entry_sign:  	|
+| Wesaturate 	| :heavy_check_mark: 	|
 
 [1]: Creation_GrandeBase_Steganalyse_DL.pdf
 [2]: DB_structure.pdf
