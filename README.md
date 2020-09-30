@@ -1,4 +1,4 @@
-![badge version](https://img.shields.io/static/v1?style=plastic&label=Version&message=0.4&color=yellow)
+![badge version](https://img.shields.io/static/v1?style=plastic&label=Version&message=0.5&color=yellow)
 ![code version](https://img.shields.io/static/v1?style=plastic&label=Code&message=up-to-date&color=brightgreen)
 ![upload version](https://img.shields.io/static/v1?style=plastic&label=Upload&message=current&color=critical)
 
@@ -6,7 +6,7 @@
 The goal of this script is to download the **Large Scale Steganalysis Database** (LSSD) developed by Hugo Ruiz in the
 article [[1]]. All the information concerning the development of the base is in this article.
 
-The database is hosted on the website: www.monsiteherbergeur.fr and gives access to **different versions of LSSD** but
+The database is hosted on the website: http://www.lirmm.fr/~chaumont/LSSD.html and gives access to **different versions of LSSD** but
 also to the **original RAW images** allowing everyone to develop their own databases.
 
 Thanks to this script, it is possible to download several image formats (JPEG, MAT & RAW), in color or grayscale, as
@@ -72,15 +72,15 @@ Ou celle-ci s'il y a un unique fichier:
 | TST_100k  	| :no_entry_sign: 	|
 
 ### Grayscale
-| Base name 	|    JPEG (Cover)    	|    JPEG (Stego)    	|        MAT (Cover)       	|     MAT (Stego)    	|
-|-----------	|:------------------:	|:------------------:	|:------------------------:	|:------------------:	|
-| LSSD_10k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|      :no_entry_sign:     	| :heavy_check_mark: 	|
-| LSSD_50k  	| :heavy_check_mark: 	| :heavy_check_mark: 	|      :no_entry_sign:     	| :heavy_check_mark: 	|
-| LSSD_100k 	|   :no_entry_sign:  	| :heavy_check_mark: 	|      :no_entry_sign:     	| :heavy_check_mark: 	|
-| LSSD_500k 	|   :no_entry_sign:  	| :heavy_check_mark: 	| :heavy_multiplication_x: 	| :heavy_check_mark: 	|
-| LSSD_1M   	|   :no_entry_sign:  	|   :no_entry_sign:  	|    :heavy_check_mark:    	|   :no_entry_sign:  	|
-| LSSD_2M   	|   :no_entry_sign:  	|   :no_entry_sign:  	|    :heavy_check_mark:    	| :heavy_check_mark: 	|
-| TST_100k  	|   :no_entry_sign:  	|   :no_entry_sign:  	|      :no_entry_sign:     	|   :no_entry_sign:  	|
+| Base name 	|       JPEG (Cover)       	|    JPEG (Stego)    	|        MAT (Cover)       	|        MAT (Stego)       	|
+|-----------	|:------------------------:	|:------------------:	|:------------------------:	|:------------------------:	|
+| LSSD_10k  	|    :heavy_check_mark:    	| :heavy_check_mark: 	| :heavy_multiplication_x: 	|    :heavy_check_mark:    	|
+| LSSD_50k  	|    :heavy_check_mark:    	| :heavy_check_mark: 	| :heavy_multiplication_x: 	|    :heavy_check_mark:    	|
+| LSSD_100k 	|      :no_entry_sign:     	| :heavy_check_mark: 	| :heavy_multiplication_x: 	|    :heavy_check_mark:    	|
+| LSSD_500k 	|      :no_entry_sign:     	| :heavy_check_mark: 	| :heavy_multiplication_x: 	|    :heavy_check_mark:    	|
+| LSSD_1M   	|      :no_entry_sign:     	|   :no_entry_sign:  	|    :heavy_check_mark:    	| :heavy_multiplication_x: 	|
+| LSSD_2M   	| :heavy_multiplication_x: 	|   :no_entry_sign:  	|    :heavy_check_mark:    	|    :heavy_check_mark:    	|
+| TST_100k  	| :heavy_multiplication_x: 	|   :no_entry_sign:  	| :heavy_multiplication_x: 	| :heavy_multiplication_x: 	|
 
 ## RAW
 | Base name  	|    JPEG (Cover)    	|
@@ -88,8 +88,8 @@ Ou celle-ci s'il y a un unique fichier:
 | ALASKA2    	| :heavy_check_mark: 	|
 | BOSS       	| :heavy_check_mark: 	|
 | Dresden    	| :heavy_check_mark: 	|
-| RAISE      	|   :no_entry_sign:  	|
-| TST        	|   :no_entry_sign:  	|
+| RAISE      	| :heavy_check_mark: 	|
+| TST        	| :heavy_check_mark: 	|
 | StegoApp   	| :heavy_check_mark: 	|
 | Wesaturate 	| :heavy_check_mark: 	|
 
