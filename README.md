@@ -1,4 +1,4 @@
-![badge version](https://img.shields.io/static/v1?style=plastic&label=Version&message=0.5&color=yellow)
+![badge version](https://img.shields.io/static/v1?style=plastic&label=Version&message=0.6&color=yellow)
 ![code version](https://img.shields.io/static/v1?style=plastic&label=Code&message=up-to-date&color=brightgreen)
 ![upload version](https://img.shields.io/static/v1?style=plastic&label=Upload&message=current&color=critical)
 
@@ -54,33 +54,33 @@ Then execute the following command:
 
     unrar x -e rar_name.part001.rar
 
-Ou celle-ci s'il y a un unique fichier:
+Or this one if there is a single file:
 
     unrar x -e rar_name.rar
 
 # Databases available
 ## LSSD
 ### Color
-| Base name 	|   JPEG (Cover)  	|
-|-----------	|:---------------:	|
-| LSSD_10k  	| :no_entry_sign: 	|
-| LSSD_50k  	| :no_entry_sign: 	|
-| LSSD_100k 	| :no_entry_sign: 	|
-| LSSD_500k 	| :no_entry_sign: 	|
-| LSSD_1M   	| :no_entry_sign: 	|
-| LSSD_2M   	| :no_entry_sign: 	|
-| TST_100k  	| :no_entry_sign: 	|
+| Base name 	|         JPEG (Cover)  	|
+|-----------	|:---------------:	        |
+| LSSD_10k  	|        :no_entry_sign: 	|
+| LSSD_50k  	|        :no_entry_sign:   	|
+| LSSD_100k 	| :heavy_multiplication_x: 	|
+| LSSD_500k 	| :heavy_multiplication_x: 	|
+| LSSD_1M   	| :heavy_multiplication_x: 	|
+| LSSD_2M   	| :heavy_multiplication_x: 	|
+| TST_100k  	| :heavy_multiplication_x: 	|
 
 ### Grayscale
-| Base name 	|       JPEG (Cover)       	|    JPEG (Stego)    	|        MAT (Cover)       	|        MAT (Stego)       	|
-|-----------	|:------------------------:	|:------------------:	|:------------------------:	|:------------------------:	|
-| LSSD_10k  	|    :heavy_check_mark:    	| :heavy_check_mark: 	| :heavy_multiplication_x: 	|    :heavy_check_mark:    	|
-| LSSD_50k  	|    :heavy_check_mark:    	| :heavy_check_mark: 	| :heavy_multiplication_x: 	|    :heavy_check_mark:    	|
-| LSSD_100k 	|      :no_entry_sign:     	| :heavy_check_mark: 	| :heavy_multiplication_x: 	|    :heavy_check_mark:    	|
-| LSSD_500k 	|      :no_entry_sign:     	| :heavy_check_mark: 	| :heavy_multiplication_x: 	|    :heavy_check_mark:    	|
-| LSSD_1M   	|      :no_entry_sign:     	|   :no_entry_sign:  	|    :heavy_check_mark:    	| :heavy_multiplication_x: 	|
-| LSSD_2M   	| :heavy_multiplication_x: 	|   :no_entry_sign:  	|    :heavy_check_mark:    	|    :heavy_check_mark:    	|
-| TST_100k  	| :heavy_multiplication_x: 	|   :no_entry_sign:  	| :heavy_multiplication_x: 	| :heavy_multiplication_x: 	|
+| Base name 	|    JPEG (Cover)    	|    JPEG (Stego)    	|     MAT (Cover)    	|     MAT (Stego)    	|
+|-----------	|:------------------:	|:------------------:	|:------------------:	|:------------------:	|
+| LSSD_10k  	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	|
+| LSSD_50k  	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	|
+| LSSD_100k 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	|
+| LSSD_500k 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	|
+| LSSD_1M   	| :heavy_check_mark: 	|   :no_entry_sign:  	| :heavy_check_mark: 	| :heavy_check_mark: 	|
+| LSSD_2M   	| :heavy_check_mark: 	|   :no_entry_sign:  	| :heavy_check_mark: 	| :heavy_check_mark: 	|
+| TST_100k  	| :heavy_check_mark: 	|   :no_entry_sign:  	| :heavy_check_mark: 	| :heavy_check_mark: 	|
 
 ## RAW
 | Base name  	|    JPEG (Cover)    	|
