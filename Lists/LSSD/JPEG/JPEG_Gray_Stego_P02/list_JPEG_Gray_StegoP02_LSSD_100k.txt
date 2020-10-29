@@ -1,1 +1,1 @@
-LSSD_100k_JPEG_Gray_StegoP02.rar
+JPEG_LSSD_100k_Gray_StegoP02.rar

@@ -1,2 +1,2 @@
-LSSD_2M_JPEG_Gray_Cover.part1.rar
-LSSD_2M_JPEG_Gray_Cover.part2.rar
+JPEG_LSSD_2M_Gray_Cover.part1.rar
+JPEG_LSSD_2M_Gray_Cover.part2.rar
