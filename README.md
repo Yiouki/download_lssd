@@ -1,4 +1,4 @@
-![badge version](https://img.shields.io/static/v1?style=plastic&label=Version&message=0.6&color=yellow)
+![badge version](https://img.shields.io/static/v1?style=plastic&label=Version&message=0.7&color=yellow)
 ![code version](https://img.shields.io/static/v1?style=plastic&label=Code&message=up-to-date&color=brightgreen)
 ![upload version](https://img.shields.io/static/v1?style=plastic&label=Upload&message=current&color=critical)
 
@@ -61,15 +61,15 @@ Or this one if there is a single file:
 # Databases available
 ## LSSD
 ### Color
-| Base name 	|         JPEG (Cover)  	|
-|-----------	|:---------------:	        |
-| LSSD_10k  	|        :no_entry_sign: 	|
-| LSSD_50k  	|        :no_entry_sign:   	|
-| LSSD_100k 	| :heavy_multiplication_x: 	|
-| LSSD_500k 	| :heavy_multiplication_x: 	|
-| LSSD_1M   	| :heavy_multiplication_x: 	|
-| LSSD_2M   	| :heavy_multiplication_x: 	|
-| TST_100k  	| :heavy_multiplication_x: 	|
+| Base name 	|  JPEG (Cover)	        |
+|-----------	|:---------------:	    |
+| LSSD_10k  	| :heavy_check_mark: 	|
+| LSSD_50k  	| :heavy_check_mark:   	|
+| LSSD_100k 	| :heavy_check_mark: 	|
+| LSSD_500k 	| :heavy_check_mark: 	|
+| LSSD_1M   	| :heavy_check_mark: 	|
+| LSSD_2M   	| :heavy_check_mark: 	|
+| TST_100k  	| :heavy_check_mark: 	|
 
 ### Grayscale
 | Base name 	|    JPEG (Cover)    	|    JPEG (Stego)    	|     MAT (Cover)    	|     MAT (Stego)    	|
