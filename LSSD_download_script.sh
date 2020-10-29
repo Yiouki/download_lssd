@@ -62,19 +62,19 @@ base_type="${base[0]}"
 #  exit 1
 #fi
 if [ "${base_name}" == "" ]; then
-  printf "[ERROR] Missing base name to download\n"
+  printf "[ERROR] Missing base name to download (type -h to help)\n"
   exit 1
 elif [ "${nature}" != "" ] && [ "${nature}" != "Cover" ] && [[ ! "${nature}" == "Stego"* ]]; then
-  printf "[ERROR] Please use 'Cover' or 'Stego' for option '-n|--nature' (case sensitive)\n"
+  printf "[ERROR] Please use 'Cover' or 'Stego' for option '-n|--nature' (case sensitive) (type -h to help)\n"
   exit 1
 elif [ "${base_type}" == "RAW" ] && [ "${nature}" != "" ]; then
-  printf "[ERROR] There are no cover or stego for RAW images\n"
+  printf "[ERROR] There are no cover or stego for RAW images (type -h to help)\n"
   exit 1
 elif [ "${coloring}" != "" ] && [ "${coloring}" != "Color" ] && [ "${coloring}" != "Gray" ]; then
-  printf "[ERROR] Please use 'Color' or 'Gray' for option '-c|--coloring' (case sensitive)\n"
+  printf "[ERROR] Please use 'Color' or 'Gray' for option '-c|--coloring' (case sensitive) (type -h to help)\n"
   exit 1
-elif [ "${coloring}" == "Color" ] && [ "${nature}" != "" ]; then
-  printf "[ERROR] The LSSD don't have stego images for in color...\n"
+elif [ "${coloring}" == "Color" ] && [ "${nature}" != "Cover" ]; then
+  printf "[ERROR] The LSSD don't have stego images in color... (type -h to help)\n"
   exit 1
 #else
 #  printf "[ERROR] Command not correct, please check it and refer to the PDF\n"
@@ -91,7 +91,12 @@ fold_list="./Lists"
 if [ "$output" = '' ]; then
   output_fold="./downloaded/$link_fold"
 else
-  output_fold=$output
+  readarray -d / -t root_fold <<<"$output"
+  if [ "${root_fold[O]}" = '.' ]; then
+    output_fold="${output/"."/$PWD}"
+  else
+    output_fold=$output
+  fi
 fi
 logs_fold="./logs/$link_fold"
 if [ $base_type == "LSSD" ]; then
@@ -102,8 +107,8 @@ fi
 
 # Beginning of the script; timestamp and creation of non-existing directory.
 timeStart=$(date +%s)
-if [ ! -d output_fold ]; then
-  echo "Directory $output_fold where RAW images will be downloaded does not exist. It will be created."
+if [ ! -d "$output_fold" ]; then
+  echo "Directory '$output_fold' where RAW images will be downloaded does not exist. It will be created."
   mkdir -p "$output_fold"
 fi
 if [ ! -d "$logs_fold" ]; then mkdir -p "$logs_fold"; fi
@@ -114,7 +119,7 @@ if [ ! -d ./tmp ]; then mkdir -p ./tmp; fi
 # its URL.
 rar_index=0
 if [ $base_type == "LSSD" ]; then
-  list="$fold_list/${base_type}/${img_type}/${img_type}_${coloring}_${nature}/list_${img_type}_${coloring}_${nature//_}_${base_name}.txt"
+  list="$fold_list/${base_type}/${img_type}/${img_type}_${coloring}_${nature}/list_${img_type}_${coloring}_${nature//_/}_${base_name}.txt"
 else
   list="$fold_list/${base_type}/list_${base_name}.txt"
 fi
@@ -124,18 +129,21 @@ if [ ! -f "$list" ]; then
   exit 1
 fi
 
+printf "Downloading....\n"
+
 NB_rar_to_DL=$(wc -l <"$list")
 
 while read -r rar_name; do
   # TODO: ne pas oubleir de changer l'URL (quand il sera connu)
+  storage_url="https://rhea.lirmm.fr/lssd/Data"
   if [ $base_type == "LSSD" ]; then
-    rar_url="https://rhea.lirmm.fr/lssd/Data/${base_type}/${img_type}/${img_type}_${coloring}_${nature}/${base_name}/$rar_name"
+    rar_url="${storage_url}/${base_type}/${img_type}/${img_type}_${coloring}_${nature}/${base_name}/$rar_name"
   else
-    rar_url="https://rhea.lirmm.fr/lssd/Data/${base_type}/${short_base_name}/$rar_name"
+    rar_url="${storage_url}/${base_type}/${short_base_name}/$rar_name"
   fi
   start_time=$(date +%s)
   if [ ! -f "$output_fold/$rar_name" ]; then
-    ( wget --no-check-certificate -c -P ./tmp/ "$rar_url" && mv ./tmp/"$rar_name" "$output_fold"/"$rar_name" ) &>> "$logs_file"
+    (wget --no-check-certificate -c -P ./tmp/ "$rar_url" && mv ./tmp/"$rar_name" "$output_fold"/"$rar_name") &>>"$logs_file"
     finish_time=$(date +%s)
     download_time=$finish_time-$start_time
     if [ ! -f "$output_fold/$rar_name" ]; then
@@ -147,9 +155,12 @@ while read -r rar_name; do
     printf "[SKIP] %s already exists\n" "$rar_name" >>"$logs_file"
   fi
 
-  rar_index=$((rar_index + 1))
+  # rar_index=$((rar_index + 1))
+  ((rar_index++))
   if [ "$((rar_index % 1))" -eq 0 ]; then
     currentTime=$(date +%s)
     echo "RAR number $rar_index / $NB_rar_to_DL downloaded ! Time Elapsed = $((currentTime - timeStart)) sec."
   fi
 done <"$list"
+
+printf "End of download\n"
