@@ -134,7 +134,7 @@ printf "Downloading....\n"
 NB_rar_to_DL=$(wc -l <"$list")
 
 while read -r rar_name; do
-  # TODO: ne pas oubleir de changer l'URL (quand il sera connu)
+  # TODO: ne pas oublier de changer l'URL (quand il sera connu)
   storage_url="https://rhea.lirmm.fr/lssd/Data"
   if [ $base_type == "LSSD" ]; then
     rar_url="${storage_url}/${base_type}/${img_type}/${img_type}_${coloring}_${nature}/${base_name}/$rar_name"
