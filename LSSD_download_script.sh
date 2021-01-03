@@ -7,8 +7,8 @@ function show_usage() {
   printf "\n"
   printf "Usage: $0 [options [parameters]]\n"
   printf "Example:\n"
-  printf "\t LSSD: $0 -b LSSD_10k -t MAT -c Gray -n Stego_P02 -o ./tst_LSSD\n"
-  printf "\t RAW: $0 -b RAW_ALASKA2 -o ./tst_RAW\n"
+  printf "\t LSSD: sh $0 -b LSSD_10k -t MAT -c Gray -n Stego_P02 -o ./tst_LSSD\n"
+  printf "\t RAW: sh $0 -b RAW_ALASKA2 -o ./tst_RAW\n"
   printf "\n"
   printf "Options:\n"
   printf " -b|--base_name: Choose the base to download\n"
@@ -134,22 +134,22 @@ printf "Downloading....\n"
 NB_rar_to_DL=$(wc -l <"$list")
 
 while read -r rar_name; do
-  # TODO: ne pas oublier de changer l'URL (quand il sera connu)
-  storage_url="https://rhea.lirmm.fr/lssd/Data"
+  storage_url="http://lssd.lirmm.fr"
   if [ $base_type == "LSSD" ]; then
     rar_url="${storage_url}/${base_type}/${img_type}/${img_type}_${coloring}_${nature}/${base_name}/$rar_name"
   else
     rar_url="${storage_url}/${base_type}/${short_base_name}/$rar_name"
   fi
   start_time=$(date +%s)
+  printf "%s\n" "$rar_url"
   if [ ! -f "$output_fold/$rar_name" ]; then
     (wget --no-check-certificate -c -P ./tmp/ "$rar_url" && mv ./tmp/"$rar_name" "$output_fold"/"$rar_name") &>>"$logs_file"
     finish_time=$(date +%s)
     download_time=$finish_time-$start_time
     if [ ! -f "$output_fold/$rar_name" ]; then
-      printf "[ERROR] %s can't be download\n" "$rar_name" "$download_time" >>"$logs_file"
+      printf "[ERROR] %s can't be download\n" "$rar_name" >> "$logs_file"
     else
-      printf "[DONE] %s downloaded (in %s)\n" "$rar_name" "$download_time" >>"$logs_file"
+      printf "[DONE] %s downloaded (in %s)\n" "$rar_name" "$download_time" >> "$logs_file"
     fi
   else
     printf "[SKIP] %s already exists\n" "$rar_name" >>"$logs_file"

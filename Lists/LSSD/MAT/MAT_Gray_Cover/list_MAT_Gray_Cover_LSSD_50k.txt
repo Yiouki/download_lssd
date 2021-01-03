@@ -1,2 +1,2 @@
-MAT_LSSD_50k_Gray_StegoP02.part1.rar
-MAT_LSSD_50k_Gray_StegoP02.part2.rar
+MAT_LSSD_50k_Gray_Cover.part1.rar
+MAT_LSSD_50k_Gray_Cover.part2.rar

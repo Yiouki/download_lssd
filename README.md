@@ -78,9 +78,9 @@ Or this one if there is a single file:
 | LSSD_50k  	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	|
 | LSSD_100k 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	|
 | LSSD_500k 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	| :heavy_check_mark: 	|
-| LSSD_1M   	| :heavy_check_mark: 	|   :no_entry_sign:  	| :heavy_check_mark: 	| :heavy_check_mark: 	|
-| LSSD_2M   	| :heavy_check_mark: 	|   :no_entry_sign:  	| :heavy_check_mark: 	| :heavy_check_mark: 	|
-| TST_100k  	| :heavy_check_mark: 	|   :no_entry_sign:  	| :heavy_check_mark: 	| :heavy_check_mark: 	|
+| LSSD_1M   	| :heavy_check_mark: 	| :heavy_check_mark:  	| :heavy_check_mark: 	| :heavy_check_mark: 	|
+| LSSD_2M   	| :heavy_check_mark: 	| :heavy_check_mark:  	| :heavy_check_mark: 	| :heavy_check_mark: 	|
+| TST_100k  	| :heavy_check_mark: 	| :heavy_check_mark:  	| :heavy_check_mark: 	| :heavy_check_mark: 	|
 
 ## RAW
 | Base name  	|    JPEG (Cover)    	|
